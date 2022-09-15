@@ -10,16 +10,16 @@ class Notification {
   }
 }
 class EmailNotification extends Notification {
-  constructor(notificationId, createdTime, content, receiver) {
-    super(notificationId, createdTime, content, receiver);
-    this.email = receiver;
+  constructor(notificationId, createdTime, content, email) {
+    super(notificationId, createdTime, content, email);
+    this.email = email;
   }
 }
 
 class SMSNotification extends Notification {
-  constructor(notificationId, createdTime, content, receiver) {
-    super(notificationId, createdTime, content, receiver);
-    this.phoneNumber = receiver;
+  constructor(notificationId, createdTime, content, phoneNumber) {
+    super(notificationId, createdTime, content, phoneNumber);
+    this.phoneNumber = phoneNumber;
   }
 }
 
